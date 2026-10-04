@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checklist — Alterações do Webdesign | E-commerce Nubian Queen</title>
+  <style>
+    :root { color-scheme: light; font-family: Arial, Helvetica, sans-serif; color: #242424; background: #f5f5f2; }
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 24px; }
+    main { max-width: 900px; margin: 0 auto; padding: 28px; background: #fff; border: 1px solid #ddd; border-radius: 10px; }
+    h1 { font-size: 1.5rem; line-height: 1.3; margin: 0 0 16px; }
+    h2 { font-size: 1.13rem; margin: 28px 0 10px; }
+    p { margin: 0; }
+    .toolbar { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; padding: 12px 0 16px; border-bottom: 1px solid #ddd; }
+    .toolbar a { color: #225c6d; }
+    .status-note { padding: 12px; margin: 16px 0 0; background: #f1f6f3; border-left: 4px solid #256a59; line-height: 1.5; }
+    .links { margin: 16px 0 24px; padding: 14px; background: #fafafa; border: 1px solid #ddd; border-radius: 6px; }
+    .links li { padding: 7px 0; }
+    .links a { color: #225c6d; overflow-wrap: anywhere; }
+    .not-applicable { color: #666; font-size: .82rem; margin-left: 8px; }
+    .detail { display: block; color: #5f5f5f; font-size: .81rem; line-height: 1.4; margin: 3px 0 0 28px; flex-basis: 100%; }
+    .pending-row { background: #fafafa; border-left: 3px solid #c4c4c4; padding-left: 9px; }
+    .pending-row label { flex-wrap: wrap; }
+    .pending-row label > span { flex: 1 1 250px; }
+    .badges { display: inline-flex; gap: 5px; flex-wrap: wrap; margin-left: 28px; }
+    .badge { font-size: .76rem; font-weight: 700; padding: 4px 8px; border-radius: 99px; white-space: nowrap; }
+    .badge-images { background: #f9e9dc; color: #703d19; }
+    .badge-prices { background: #fff0c7; color: #654d00; }
+    .badge-validation { background: #e4edfb; color: #204670; }
+    .legend { margin: 20px 0 8px; line-height: 1.6; }
+    button { font: inherit; padding: 7px 11px; background: #fff; border: 1px solid #999; border-radius: 5px; cursor: pointer; }
+    button:hover, button:focus-visible { border-color: #225c6d; }
+    ul { list-style: none; margin: 0; padding: 0; }
+    li { border-bottom: 1px solid #eee; }
+    label { display: flex; gap: 10px; align-items: flex-start; padding: 10px 0; cursor: pointer; line-height: 1.4; }
+    input { width: 18px; height: 18px; margin: 1px 0 0; flex: none; accent-color: #256a59; }
+    input:checked + span { color: #406657; }
+    input:focus-visible { outline: 2px solid #225c6d; outline-offset: 3px; }
+    .deadline { margin-top: 26px; font-weight: 600; }
+    @media (max-width: 600px) { body { padding: 10px; } main { padding: 18px; } h1 { font-size: 1.28rem; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Checklist — Alterações do Webdesign | E-commerce Nubian Queen</h1>
+    <div class="toolbar">
+      <strong id="progress" role="status" aria-live="polite"></strong>
+      <button id="reset" type="button">Restaurar marcações verificadas</button>
+      <a href="https://docs.google.com/document/d/1NVgM2f7seN7D7B-k1RIAdT6UNMCzYfyUyuGTJe_3MDA/edit" target="_blank" rel="noopener noreferrer">Documento original</a>
+    </div>
+    <p class="status-note">Atualização 03/10/2026: os sete produtos novos estão publicados, com imagens e sem preço. As imagens oficiais disponíveis foram aplicadas. Imagens antigas sem substitutas permanecem por decisão aprovada. A loja continua em manutenção.</p>
+    <aside class="links">
+      <h2>Links dos sete produtos novos</h2>
+      <ul>
+        <li><a href="https://nubianqueen.pt/produto/balance-cleanser-gel/">Balance Cleanser Gel — https://nubianqueen.pt/produto/balance-cleanser-gel/</a></li>
+        <li><a href="https://nubianqueen.pt/produto/balance-tonic/">Balance Tonic — https://nubianqueen.pt/produto/balance-tonic/</a></li>
+        <li><a href="https://nubianqueen.pt/produto/balance-protetor-solar/">Balance Protetor Solar — https://nubianqueen.pt/produto/balance-protetor-solar/</a></li>
+        <li><a href="https://nubianqueen.pt/produto/purify-protetor-solar/">Purify Protetor Solar — https://nubianqueen.pt/produto/purify-protetor-solar/</a></li>
+        <li><a href="https://nubianqueen.pt/produto/recovery-cleanser/">Recovery Cleanser — https://nubianqueen.pt/produto/recovery-cleanser/</a></li>
+        <li><a href="https://nubianqueen.pt/produto/recovery-tonic/">Recovery Tonic — https://nubianqueen.pt/produto/recovery-tonic/</a></li>
+        <li><a href="https://nubianqueen.pt/produto/recovery-protetor-solar/">Recovery Protetor Solar — https://nubianqueen.pt/produto/recovery-protetor-solar/</a></li>
+      </ul>
+    </aside>
+    <p class="legend">Pendências destacadas: <small class="badge badge-images">Imagens</small> <small class="badge badge-prices">Preços</small> <small class="badge badge-validation">Validação</small>. Um item pode depender de mais de uma frente.</p>
+    <section>
+      <h2>1. Produtos</h2>
+      <ul>
+        <li><label for="item-1"><input id="item-1" type="checkbox" data-verified="true" checked><span>Substituir os nomes antigos pelos novos nomes oficiais em todos os produtos.</span></label></li>
+        <li><label for="item-2"><input id="item-2" type="checkbox" data-verified="true" checked><span>Substituir todas as imagens dos produtos pelos novos rótulos.</span><small class="detail">Todos os produtos individuais publicados usam imagem oficial. Imagens antigas sem substituta foram mantidas por exceção aprovada.</small></label></li>
+        <li><label for="item-3"><input id="item-3" type="checkbox" data-verified="true" checked><span>Atualizar títulos e informações das páginas individuais.</span></label></li>
+        <li><label for="item-4"><input id="item-4" type="checkbox" data-verified="true" checked><span>Inserir as novas copies fornecidas.</span></label></li>
+        <li><label for="item-5"><input id="item-5" type="checkbox" data-verified="true" checked><span>Conferir preços, variações e stock para garantir que a migração não alterou dados comerciais.</span><small class="detail">Comparação com o registo anterior: os 26 produtos preexistentes mantêm preços, stock, SKUs e tipo. Sete produtos novos não tinham preço anterior e seguem sem preço.</small></label></li>
+    </ul>
+    </section>
+    <section>
+      <h2>2. Linhas e categorias</h2>
+      <ul>
+        <li><label for="item-6"><input id="item-6" type="checkbox" data-verified="true" checked><span>Harmony → Balance</span></label></li>
+        <li><label for="item-7"><input id="item-7" type="checkbox" data-verified="true" checked><span>Clean → Purify</span></label></li>
+        <li><label for="item-8"><input id="item-8" type="checkbox" data-verified="true" checked><span>Melanin → Recovery</span></label></li>
+        <li><label for="item-9"><input id="item-9" type="checkbox" data-verified="true" checked><span>Atualizar páginas das três linhas.</span></label></li>
+        <li><label for="item-10"><input id="item-10" type="checkbox" data-verified="true" checked><span>Atualizar categorias, subcategorias e filtros da loja.</span></label></li>
+        <li><label for="item-11"><input id="item-11" type="checkbox" data-verified="true" checked><span>Remover referências visíveis às nomenclaturas antigas.</span><small class="detail">Nomes e textos atuais conferidos. Rótulos antigos em artes sem substituta permanecem pela exceção aprovada.</small></label></li>
+    </ul>
+    </section>
+    <section>
+      <h2>3. Kits</h2>
+      <ul>
+        <li><label for="item-12"><input id="item-12" type="checkbox" data-verified="true" checked><span>Harmony Essencial/Completo → Balance Essencial/Completo</span></label></li>
+        <li><label for="item-13"><input id="item-13" type="checkbox" data-verified="true" checked><span>Clean Essencial/Completo → Purify Essencial/Completo</span></label></li>
+        <li><label for="item-14"><input id="item-14" type="checkbox" data-verified="true" checked><span>Melanin Essencial/Completo → Recovery Essencial/Completo</span></label></li>
+        <li><label for="item-15"><input id="item-15" type="checkbox" data-status="not-applicable" disabled><span><del>Atualizar Kits Men.</del></span><small class="not-applicable">Fora do escopo no documento final.</small></label></li>
+        <li><label for="item-16"><input id="item-16" type="checkbox" data-verified="true" checked><span>Atualizar Kits Viagem.</span><small class="detail">Seis produtos publicados com novos nomes, textos e preços existentes. Arte compartilhada mantida por falta de substituta.</small></label></li>
+        <li><label for="item-17"><input id="item-17" type="checkbox" data-verified="true" checked><span>Substituir imagens, nomes, descrição e composição de cada kit conforme material entregue.</span><small class="detail">Nomes e descrições atualizados; imagens oficiais disponíveis aplicadas aos Kits Essenciais e Completos. Composição comercial cadastrada preservada conforme o documento. Kits Viagem e On The Go mantêm artes sem substitutas, por exceção aprovada.</small></label></li>
+        <li><label for="item-18"><input id="item-18" type="checkbox" data-verified="true" checked><span>Conferir associação dos produtos dentro de cada kit.</span></label></li>
+    </ul>
+    </section>
+    <section>
+      <h2>4. URLs e SEO técnico</h2>
+      <ul>
+        <li><label for="item-19"><input id="item-19" type="checkbox" data-verified="true" checked><span>Criar/alterar os slugs para a nova nomenclatura.</span></label></li>
+        <li><label for="item-20"><input id="item-20" type="checkbox" data-verified="true" checked><span>Implementar redirecionamento 301 das URLs antigas para as novas, evitando links quebrados e perda desnecessária do histórico das páginas.</span></label></li>
+        <li><label for="item-21"><input id="item-21" type="checkbox" data-verified="true" checked><span>Atualizar title/meta description quando fornecidos.</span></label></li>
+        <li><label for="item-22"><input id="item-22" type="checkbox" data-verified="true" checked><span>Atualizar alt text das novas imagens.</span></label></li>
+        <li><label for="item-23"><input id="item-23" type="checkbox" data-verified="true" checked><span>Verificar sitemap e indexação após a alteração.</span><small class="detail">Abertura temporária verificada com Googlebot: sete produtos HTTP 200, meta index/follow e canonical correto; todos constam no sitemap e robots.txt não os bloqueia. Isso confirma a indexabilidade técnica; inclusão efetiva no Google depende do rastreamento.</small></label></li>
+    </ul>
+    </section>
+    <section>
+      <h2>5. Navegação e referências internas</h2>
+      <ul>
+        <li><label for="item-24"><input id="item-24" type="checkbox" data-verified="true" checked><span>Atualizar menu principal e páginas de navegação.</span></label></li>
+        <li><label for="item-25"><input id="item-25" type="checkbox" data-verified="true" checked><span>Atualizar pesquisa interna.</span></label></li>
+        <li><label for="item-26"><input id="item-26" type="checkbox" data-verified="true" checked><span>Atualizar “Completar a sua rotina” / produtos relacionados.</span></label></li>
+        <li><label for="item-27"><input id="item-27" type="checkbox" data-verified="true" checked><span>Verificar botões e CTAs.</span><small class="detail">CTAs da Home, Linhas e Kits Viagem conferidos. Cliques de amostra chegaram às páginas corretas com login, sem desativar a manutenção; formulário externo responde 200.</small></label></li>
+        <li><label for="item-28"><input id="item-28" type="checkbox" data-verified="true" checked><span>Procurar no site inteiro referências a Harmony, Clean e Melanin que tenham ficado para trás.</span></label></li>
+    </ul>
+    </section>
+    <section>
+      <h2>6. Integrações</h2>
+      <ul>
+        <li><label for="item-29"><input id="item-29" type="checkbox" data-verified="true" checked><span>Garantir que IDs/SKUs ou integrações existentes não sejam quebrados durante a alteração.</span><small class="detail">Os 26 produtos anteriores preservaram IDs e SKUs. Produto existente foi adicionado ao carrinho e apareceu no checkout com preço correto; métodos Stripe estão disponíveis. Não foi feita cobrança.</small></label></li>
+        <li><label for="item-30"><input id="item-30" type="checkbox" data-verified="true" checked><span>Conferir eventos e tracking do e-commerce após a migração.</span><small class="detail">Escopo confirmado: relatórios nativos WooCommerce. APIs de pedidos, receita e produtos respondem 200 e mostram 5 pedidos e 6 itens vendidos no histórico de 2026. Ainda não há pedido posterior à migração. Pixels e tags externos ficam fora desta etapa.</small></label></li>
+        <li class="pending-row"><label for="item-31"><input id="item-31" type="checkbox" data-verified="false"><span>Testar integrações relacionadas ao carrinho/checkout e CRM.</span><span class="badges"><small class="badge badge-validation">Validação</small></span><small class="detail">Carrinho e checkout funcionaram; três meios de pagamento aparecem. Stripe está em produção e o modo de teste está desativado; não há chaves de teste nas configurações. Cartão fictício não testa o pagamento nesse modo. Não há webhook WooCommerce nem CRM identificado; nenhum pedido foi concluído.</small></label></li>
+    </ul>
+    </section>
+    <section>
+      <h2>7. Testes finais</h2>
+      <ul>
+        <li><label for="item-32"><input id="item-32" type="checkbox" data-verified="true" checked><span>Testar produto → adicionar ao carrinho → checkout.</span><small class="detail">Purify Tonic adicionado e exibido no checkout por 55,00 €. Nenhum pedido foi concluído; produto de teste foi removido e carrinho original confirmado.</small></label></li>
+        <li><label for="item-33"><input id="item-33" type="checkbox" data-verified="true" checked><span>Testar kits.</span></label></li>
+        <li><label for="item-34"><input id="item-34" type="checkbox" data-verified="true" checked><span>Testar todos os novos links.</span></label></li>
+        <li><label for="item-35"><input id="item-35" type="checkbox" data-verified="true" checked><span>Testar redirecionamentos das URLs antigas.</span></label></li>
+        <li><label for="item-36"><input id="item-36" type="checkbox" data-verified="true" checked><span>Conferir desktop e mobile.</span></label></li>
+        <li class="pending-row"><label for="item-37"><input id="item-37" type="checkbox" data-verified="false"><span>Verificar imagens, preços, textos e produtos relacionados.</span><span class="badges"><small class="badge badge-prices">Preços</small></span><small class="detail">Imagens e textos conferidos. Referências antigas do Recovery Serum foram corrigidas para produtos publicados. Única pendência deste item: sete produtos novos sem preço definido.</small></label></li>
+        <li class="pending-row"><label for="item-38"><input id="item-38" type="checkbox" data-verified="false"><span>Fazer backup antes da intervenção e validação final depois da publicação.</span><span class="badges"><small class="badge badge-validation">Validação</small></span><small class="detail">Backup prévio: feito manualmente pelo Elton. Testes de páginas, sitemap, desktop/mobile, carrinho e checkout até a etapa de pagamento já feitos. Resta a conferência final após preços definidos e abertura definitiva da loja.</small></label></li>
+      </ul>
+    </section>
+    <p class="deadline">Prazo dia 28/09.</p>
+  </main>
+  <script>
+    const inputs = [...document.querySelectorAll('input[type="checkbox"]')];
+    const storageKey = 'nubian-queen-checklist-v9';
+    let saved;
+    try {
+      saved = JSON.parse(localStorage.getItem(storageKey));
+      if (!saved) {
+        saved = JSON.parse(localStorage.getItem('nubian-queen-checklist-v8')) || JSON.parse(localStorage.getItem('nubian-queen-checklist-v7')) || JSON.parse(localStorage.getItem('nubian-queen-checklist-v6')) || JSON.parse(localStorage.getItem('nubian-queen-checklist-v5')) || JSON.parse(localStorage.getItem('nubian-queen-checklist-v4')) || JSON.parse(localStorage.getItem('nubian-queen-checklist-v3')) || JSON.parse(localStorage.getItem('nubian-queen-checklist-v2')) || JSON.parse(localStorage.getItem('nubian-queen-checklist-v1')) || {};
+        saved['item-2'] = true;
+        saved['item-5'] = true;
+        saved['item-11'] = true;
+        saved['item-17'] = true;
+        saved['item-23'] = true;
+        saved['item-27'] = true;
+        saved['item-29'] = true;
+        saved['item-30'] = true;
+        saved['item-32'] = true;
+        saved['item-18'] = true;
+        saved['item-28'] = true;
+        saved['item-34'] = true;
+        saved['item-15'] = false;
+      }
+    } catch { saved = null; }
+    if (saved && typeof saved === 'object') {
+      for (const input of inputs) {
+        if (typeof saved[input.id] === 'boolean') input.checked = saved[input.id];
+      }
+    }
+    function update() {
+      const state = Object.fromEntries(inputs.map(input => [input.id, input.checked]));
+      const actionable = inputs.filter(input => input.dataset.status !== 'not-applicable');
+      const completed = actionable.filter(input => input.checked).length;
+      document.querySelector('#progress').textContent = `${completed} concluídos · ${actionable.length - completed} pendentes · ${inputs.length - actionable.length} não se aplica`;
+      try { localStorage.setItem(storageKey, JSON.stringify(state)); } catch { /* navegação privada */ }
+    }
+    inputs.forEach(input => input.addEventListener('change', update));
+    document.querySelector('#reset').addEventListener('click', () => {
+      inputs.forEach(input => { input.checked = input.dataset.verified === 'true'; });
+      update();
+    });
+    update();
+  </script>
+</body>
+</html>
